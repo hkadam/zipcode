@@ -39,12 +39,12 @@ two specs with positive and negative scenarios in features under spec folder.The
 and preference pages which have the methods used in feature specs.
 The home page object provides encapsulation so any modifications to the homepage will only require a change in page objects.
 In data folder under spec ,there is a yml file with a list of zipcode test data to test zipcode field.
-1.rspec_junit_formatter gem added to generate junit reports in test-reports folder which show the count and can be added in
+1. rspec_junit_formatter gem added to generate junit reports in test-reports folder which show the count and can be added in
 as artifacts for Bamboo/Jenkins continuous integration tools.
-2.capybara-screenshot gem is added which captures a page screenshot on failure in the test-reports folder.
-3.The .rspec file is used for setting output format.
-4.The spec_helper.rb has all the configurations for setting the capybara driver, wait time, app_host and Grid settings.
-5.parallel_tests gem added to run the tests in parallel on each nodes(firefox instance) to save run time.
+2. capybara-screenshot gem is added which captures a page screenshot on failure in the test-reports folder.
+3. The .rspec file is used for setting output format.
+4. The spec_helper.rb has all the configurations for setting the capybara driver, wait time, app_host and Grid settings.
+5. parallel_tests gem added to run the tests in parallel on each nodes(firefox instance) to save run time.
 
 Compromises made:
 Only selective few random makes & models added and the random selection logic is added in the home_page instead of a helper.
