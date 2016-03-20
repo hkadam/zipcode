@@ -4,7 +4,7 @@ This package contains UI tests for truecar autoblog site, using [siteprism][1], 
 
 
 ##### Installation steps to run the tests:
-(Firefox browser needs to be pre-installed)
+(updated Firefox browser needs to be pre-installed)
 
 1. Clone the package
 2. `bundle install`
@@ -23,7 +23,7 @@ To just run with `smoke test` tag:
 
 `SPEC_OPTS='--tag smoke' rake spec`
 
-To just with all specs `regression test` tag:
+To run with all specs `regression test` tag:
 
 `SPEC_OPTS='--tag regression' rake spec`
 
@@ -38,25 +38,47 @@ I am using [siteprism][1] A Capybara Page Object Model DSL for automated accepta
 two specs with positive and negative scenarios in features under spec folder.The pages folder has home page
 and preference pages which have the methods used in feature specs.
 The home page object provides encapsulation so any modifications to the homepage will only require a change in page objects.
-In data folder under spec there is a yml file with a list of zipcode test data to test zipcode field.
-rspec_junit_formatter gem added to generate junit reports in test-reports folder which show the count and can be added in
+In data folder under spec ,there is a yml file with a list of zipcode test data to test zipcode field.
+1.rspec_junit_formatter gem added to generate junit reports in test-reports folder which show the count and can be added in
 as artifacts for Bamboo/Jenkins continuous integration tools.
-capybara-screenshot gem added which captures a page screenshot on failure in the test-reports folder.
-The .rspec file is used for setting output format.
-The spec_helper.rb has all the configurations for setting the capybara driver, wait time, app_host and Grid settings.
-parallel_tests gem added to run the tests in parallel on each nodes(firefox instance) to save run time.
+2.capybara-screenshot gem is added which captures a page screenshot on failure in the test-reports folder.
+3.The .rspec file is used for setting output format.
+4.The spec_helper.rb has all the configurations for setting the capybara driver, wait time, app_host and Grid settings.
+5.parallel_tests gem added to run the tests in parallel on each nodes(firefox instance) to save run time.
 
 Compromises made:
 Only selective few random makes & models added and the random selection logic is added in the home_page instead of a helper.
 
 
 ##### Future enhancements:
-1) Use a restclient/airborne gem to GET https://autoblog.truecar.com/nc/api/make-models-s2 api response and parse json
+1. Use a restclient/airborne gem to GET https://autoblog.truecar.com/nc/api/make-models-s2 api response and parse json
  to get car makes and models in a helper file.
-2) The random make,model selection logic could have been taken out from pages and added in a helper file instead.
-3) Run specs in different browsers(chrome,safari),different mobile screen resolutions to test if site is responsive.
+2. The random make,model selection logic could have been taken out from pages and added in a helper file instead.
+3. Run specs in different browsers(chrome,safari),different mobile screen resolutions to test if site is responsive.
 
+#####  Output looks like
+hrishi-mbp:truecar hrishi$ rake spec
+2 processes for 2 specs, ~ 1 specs per process
 
+autoblog zipcode validation test flow
+  verifies zipcode with special characters
+  verifies zipcode with space
+  verifies zipcode with no digits
+  verifies blank zipcode
+  verifies negative zipcode
+  verifies a zipcode with less than 5 digits
+  verifies a zipcode greater than 5 digits
+  verifies a non-existing zipcode
+  verifies a valid zipcode
+
+autoblog happy path zipcode test flow
+  verifies zipcode autofill
+  verifies copying and pasting a zipcode
+
+Finished in 38.5 seconds (files took 0.76895 seconds to load)
+11 examples, 0 failures
+
+Took 40 seconds
 
 [1]: https://github.com/natritmeyer/site_prism
 [2]: https://github.com/jnicklas/capybara
