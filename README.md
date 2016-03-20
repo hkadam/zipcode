@@ -57,29 +57,7 @@ Only selective few random makes & models added and the random selection logic is
 2. The random make,model selection logic could have been taken out from pages and added in a helper file instead.
 3. Run specs in different browsers(chrome,safari),different mobile screen resolutions to test if site is responsive.
 
-#####  Output looks like
-hrishi-mbp:truecar hrishi$ rake spec
-2 processes for 2 specs, ~ 1 specs per process
 
-autoblog zipcode validation test flow
-  verifies zipcode with special characters
-  verifies zipcode with space
-  verifies zipcode with no digits
-  verifies blank zipcode
-  verifies negative zipcode
-  verifies a zipcode with less than 5 digits
-  verifies a zipcode greater than 5 digits
-  verifies a non-existing zipcode
-  verifies a valid zipcode
-
-autoblog happy path zipcode test flow
-  verifies zipcode autofill
-  verifies copying and pasting a zipcode
-
-Finished in 38.5 seconds (files took 0.76895 seconds to load)
-11 examples, 0 failures
-
-Took 40 seconds
 
 [1]: https://github.com/natritmeyer/site_prism
 [2]: https://github.com/jnicklas/capybara
