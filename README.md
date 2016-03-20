@@ -6,7 +6,7 @@ This package contains UI tests for truecar autoblog site, using [siteprism][1], 
 ##### Installation steps to run the tests:
 (updated Firefox browser needs to be pre-installed)
 
-1. Clone the package
+1. Clone the package   (eg: git clone https://github.com/hkadam/truecar.git )
 2. `bundle install`
 3. `bundle exec rake spec`
 
