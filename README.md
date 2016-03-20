@@ -57,7 +57,8 @@ Only selective few random makes & models added and the random selection logic is
 2. The random make,model selection logic could have been taken out from pages and added in a helper file instead.
 3. Run specs in different browsers(chrome,safari),different mobile screen resolutions to test if site is responsive.
 
-
+##### Youtube link for the Zipcode verification test run
+https://youtu.be/Ma0JjjrUHz0
 
 [1]: https://github.com/natritmeyer/site_prism
 [2]: https://github.com/jnicklas/capybara
