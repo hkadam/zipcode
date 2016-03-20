@@ -1,0 +1,10 @@
+# RubyMine
+.idea
+
+# vim
+*.swp
+
+# test results
+capybara-*.html
+/spec/tmp/*
+/test-reports

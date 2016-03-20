@@ -1,0 +1,12 @@
+  #zipcodes
+
+    valid_zipcode: 95192
+    special_characters: 92@#7
+    nondigits: ABCDE
+    space: 92 07
+    blank:
+    negative: -9270
+    short: 927
+    long: 30000000
+    non-existing: 20000
+    military_zipcode: 09204-1234

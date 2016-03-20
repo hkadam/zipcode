@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="9" failures="0" errors="0" time="30.878882" timestamp="2016-03-20T13:19:43-07:00">
+  <!-- Randomized with seed 45888 -->
+  <properties/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies zipcode with special characters" file="./spec/features/zipcode_negative_spec.rb" time="9.528902"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies zipcode with space" file="./spec/features/zipcode_negative_spec.rb" time="2.816283"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies zipcode with no digits" file="./spec/features/zipcode_negative_spec.rb" time="2.656806"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies blank zipcode" file="./spec/features/zipcode_negative_spec.rb" time="2.178163"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies negative zipcode" file="./spec/features/zipcode_negative_spec.rb" time="2.216322"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies a zipcode with less than 5 digits" file="./spec/features/zipcode_negative_spec.rb" time="2.081819"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies a zipcode greater than 5 digits" file="./spec/features/zipcode_negative_spec.rb" time="2.388972"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies a non-existing zipcode" file="./spec/features/zipcode_negative_spec.rb" time="2.427932"/>
+  <testcase classname="spec.features.zipcode_negative_spec" name="autoblog zipcode validation test flow verifies a valid zipcode" file="./spec/features/zipcode_negative_spec.rb" time="4.580762"/>
+</testsuite>
