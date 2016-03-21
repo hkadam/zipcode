@@ -23,7 +23,7 @@ To just run with `smoke test` tag:
 
 `SPEC_OPTS='--tag smoke' rake spec`
 
-To run with all specs `regression test` tag:
+To run all specs with `regression test` tag:
 
 `SPEC_OPTS='--tag regression' rake spec`
 
@@ -34,7 +34,7 @@ To run using Selenium Grid specifying parallel nodes:
 
 
 ##### My approach:
-I am using [siteprism][1] A Capybara Page Object Model DSL for automated acceptance testing.Added are
+I am using [siteprism][1] a Capybara Page Object Model DSL for automated acceptance testing.Added are
 two specs with positive and negative scenarios in features under spec folder.The pages folder has home page
 and preference pages which have the methods used in feature specs.
 The home page object provides encapsulation so any modifications to the homepage will only require a change in page objects.
