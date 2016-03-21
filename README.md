@@ -50,6 +50,18 @@ and can be added in as artifacts for Bamboo/Jenkins continuous integration tools
 Compromises made:
 Only selective few random makes & models added and the random selection logic is added in the home_page instead of a helper.
 
+##### Testcases in spec
+  1.  Verify zipcode with special characters
+  2.  Verify zipcode with space
+  3.  Verify zipcode with no digits
+  4.  Verify blank zipcode
+  5.  Verify negative zipcode
+  6.  Verify a zipcode with less than 5 digits
+  7.  Verify a zipcode greater than 5 digits
+  8.  Verify a non-existing zipcode
+  9.  Verify a valid zipcode
+  10. Verify zipcode autofill
+  11. Verify copying and pasting a zipcode
 
 ##### Future enhancements:
 1. Use a restclient/airborne gem to GET https://autoblog.truecar.com/nc/api/make-models-s2 api response and parse json
