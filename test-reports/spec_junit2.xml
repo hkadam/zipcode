@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec2" tests="2" failures="0" errors="0" time="16.766168" timestamp="2016-03-20T13:19:43-07:00">
-  <!-- Randomized with seed 14146 -->
+<testsuite name="rspec2" tests="2" failures="0" errors="0" time="15.691176" timestamp="2016-03-20T13:31:39-07:00">
+  <!-- Randomized with seed 9694 -->
   <properties/>
-  <testcase classname="spec.features.zipcode_positive_spec" name="autoblog happy path zipcode test flow verifies zipcode autofill" file="./spec/features/zipcode_positive_spec.rb" time="11.827625"/>
-  <testcase classname="spec.features.zipcode_positive_spec" name="autoblog happy path zipcode test flow verifies copying and pasting a zipcode" file="./spec/features/zipcode_positive_spec.rb" time="4.937612"/>
+  <testcase classname="spec.features.zipcode_positive_spec" name="autoblog happy path zipcode test flow verifies zipcode autofill" file="./spec/features/zipcode_positive_spec.rb" time="11.744439"/>
+  <testcase classname="spec.features.zipcode_positive_spec" name="autoblog happy path zipcode test flow verifies copying and pasting a zipcode" file="./spec/features/zipcode_positive_spec.rb" time="3.945930"/>
 </testsuite>

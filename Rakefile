@@ -17,7 +17,7 @@
     task all: :set_defaults
 
     task :set_defaults do
-      ENV['APP_HOST'] = ENV['APP_HOST'] ||= 'https://autoblog.truecar.com'
+      ENV['APP_HOST'] = ENV['APP_HOST'] ||= 'https://autoblog.zipcode.com'
     end
 
   rescue LoadError => e
