@@ -1,4 +1,4 @@
-## Zipcode verification Test
+## Zip code verification Test
 
 This package contains UI tests for an autoblog site, using [siteprism][1], [capybara][2], [rspec][3] and [selenium webdriver][4].
 
@@ -15,7 +15,7 @@ You can pass command-line variables to run against other environments and/or aga
 
 For example:
 
-To run against prod environment, run the tests using:
+To run against prod environment, run the following tests using:
 
 `APP_HOST=https://autoblog.truecar.com rake spec`
 
@@ -69,7 +69,7 @@ Only selective few random makes & models added and the random selection logic is
 2. The random make,model selection logic could have been taken out from pages and added in a helper file instead.
 3. Run specs in different browsers(chrome,safari),different mobile screen resolutions to test if site is responsive.
 
-##### Youtube link for the Zipcode verification test run
+##### YouTube link for the Zipcode verification test run
 https://youtu.be/Ma0JjjrUHz0
 
 [1]: https://github.com/natritmeyer/site_prism
